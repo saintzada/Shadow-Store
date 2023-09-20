@@ -79,24 +79,31 @@ main {
     position: absolute;
     animation: rotateBanner 12s infinite alternate;
     opacity: 0;
+    /* Atualize os caminhos das imagens a seguir */
+    background-image: url('banner1.jpg');
 }
 
+/* Atualize os caminhos das imagens a seguir */
 @keyframes rotateBanner {
     0% {
         opacity: 0;
         transform: translateX(100%); /* Iniciar fora da tela à direita */
+        background-image: url('banner1.jpg');
     }
     25% {
         opacity: 1;
         transform: translateX(0); /* Deslizar para a esquerda */
+        background-image: url('banner1.jpg');
     }
     75% {
         opacity: 1;
         transform: translateX(0); /* Manter na tela */
+        background-image: url('banner1.jpg');
     }
     100% {
         opacity: 0;
         transform: translateX(-100%); /* Sair para a esquerda */
+        background-image: url('banner1.jpg');
     }
 }
 
