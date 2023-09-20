@@ -64,6 +64,45 @@ main {
 }
 /* ... (outros estilos) ... */
 
+/* ... (outros estilos) ... */
+
+.banner {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    animation: rotateBanner 12s infinite alternate;
+    opacity: 0;
+}
+
+@keyframes rotateBanner {
+    0% {
+        opacity: 0;
+        transform: translateX(100%); /* Iniciar fora da tela à direita */
+    }
+    25% {
+        opacity: 1;
+        transform: translateX(0); /* Deslizar para a esquerda */
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(0); /* Manter na tela */
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%); /* Sair para a esquerda */
+    }
+}
+
+/* ... (outros estilos) ... */
+
+
 .product:hover {
     transform: scale(0.95); /* Efeito de escala ao passar o mouse */
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
