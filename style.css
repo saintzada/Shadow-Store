@@ -12,6 +12,7 @@ body {
     min-height: 100vh; /* Define a altura mínima da página */
     display: flex;
     flex-direction: column;
+    overflow-y: scroll; /* Adicione uma barra de rolagem vertical */
 }
 
 header {
@@ -40,7 +41,8 @@ main {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    flex-grow: 1; /* Preencher o espaço restante entre header e footer */
+    /* Remova a flex-grow para permitir a rolagem vertical */
+    min-height: calc(100vh - 110px); /* Altura mínima com margem do rodapé */
 }
 
 .product {
@@ -131,7 +133,7 @@ footer {
     background: url('https://github.com/saintzada/Shadow-Store/blob/main/reader.jpg?raw=true') no-repeat center center;
     background-size: auto 100%;
     text-align: center;
-    padding: 10px; /* Espaçamento interno */
+    padding: 5px; /* Espaçamento interno menor */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     height: 100px; /* Defina a altura desejada */
     margin-top: auto; /* Empurrar o rodapé para a parte inferior */
