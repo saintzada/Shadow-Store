@@ -1,10 +1,14 @@
 // JavaScript (script.js)
-function showBuyButton(product) {
-    const buyButton = product.querySelector('.buy-button');
-    buyButton.style.opacity = '1';
-}
+const products = document.querySelectorAll('.product');
 
-function hideBuyButton(product) {
-    const buyButton = product.querySelector('.buy-button');
-    buyButton.style.opacity = '0';
-}
+products.forEach((product) => {
+    product.addEventListener('mouseover', () => {
+        const buyButton = product.querySelector('.buy-button');
+        buyButton.style.opacity = '1';
+    });
+
+    product.addEventListener('mouseout', () => {
+        const buyButton = product.querySelector('.buy-button');
+        buyButton.style.opacity = '0';
+    });
+});
