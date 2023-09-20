@@ -61,9 +61,20 @@ main {
     position: relative; /* Adicione position: relative; */
 }
 
-.product:hover {
-    transform: scale(0.95); /* Efeito de escala ao passar o mouse */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+.product-details {
+    position: absolute;
+    bottom: 0; /* Posicione na parte inferior do produto */
+    left: 0;
+    width: 100%; /* Use a largura total do produto */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    color: white;
+    padding: 10px;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s;
+}
+
+.product:hover .product-details {
+    opacity: 1; /* Torna visível ao passar o mouse */
 }
 
 .product img {
@@ -73,21 +84,7 @@ main {
 
 .product-details {
     padding: 10px;
-    text-align: center; /* Centralize o conteúdo horizontalmente */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
-    color: white;
-    opacity: 0; /* Inicialmente invisível */
-    transition: opacity 0.3s;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0; /* Utilize toda a largura do produto */
 }
-
-.product:hover .product-details {
-    opacity: 1; /* Torna visível ao passar o mouse */
-}
-
 
 .price {
     font-weight: bold;
