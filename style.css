@@ -56,12 +56,12 @@ main {
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 10px;
     width: 300px;
-    max-height: 400px; /* Defina a altura máxima desejada */
+    max-height: 400px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Alinhar itens verticalmente */
 }
-
 /* ... (outros estilos) ... */
 
 .product:hover {
@@ -97,13 +97,14 @@ main {
 
 /* Defina o botão Comprar para ficar oculto por padrão */
 .buy-button {
-    background-color: #27ae60; /* Verde */
+    background-color: #27ae60;
     color: white;
     padding: 8px 16px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
     opacity: 0;
+    margin-top: auto; /* Empurre o botão para a parte inferior */
 }
 
 /* Mostre o botão Comprar ao passar o mouse sobre o produto */
