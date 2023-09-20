@@ -38,12 +38,53 @@ nav a {
 
 main {
     display: flex;
-    flex-direction: column; /* Alinhar verticalmente */
-    align-items: center; /* Alinhar horizontalmente */
+    justify-content: space-around;
     padding: 20px;
     flex-grow: 1; /* Preencher o espaço restante entre header e footer */
 }
 
+.product {
+    border: 1px solid #ddd; /* Borda cinza */
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px; /* Adicionar bordas arredondadas */
+    width: 300px; /* Defina a largura dos produtos */
+    overflow: hidden; /* Esconde os elementos que ultrapassam a largura */
+}
+
+.product:hover {
+    transform: scale(0.95); /* Efeito de escala ao passar o mouse */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #FF0000; /* Vermelho */
+}
+
+/* Adicione um efeito de transição suave para o botão Comprar */
+.buy-button {
+    background-color: #27ae60; /* Verde */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #219e54; /* Verde escuro ao passar o mouse */
+}
+
+/* Adicione um efeito de animação ao banner */
 .banner {
     width: 100%;
     max-height: 300px;
@@ -62,48 +103,20 @@ main {
 @keyframes rotateBanner {
     0% {
         opacity: 0;
+        transform: translateX(100%); /* Iniciar fora da tela à direita */
     }
     25% {
         opacity: 1;
+        transform: translateX(0); /* Deslizar para a esquerda */
     }
     75% {
         opacity: 1;
+        transform: translateX(0); /* Manter na tela */
     }
     100% {
         opacity: 0;
+        transform: translateX(-100%); /* Sair para a esquerda */
     }
-}
-
-.product {
-    border: 1px solid #ddd; /* Borda cinza */
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 10px; /* Adicionar bordas arredondadas */
-}
-
-.product:hover {
-    transform: scale(0.95); /* Efeito de escala ao passar o mouse */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-}
-
-.price {
-    font-weight: bold;
-    color: #FF0000; /* Vermelho */
-}
-
-/* Defina a cor de fundo vermelho para o elemento com a classe .reader */
-.reader {
-    background-color: #FF0000; /* Vermelho sólido */
-    padding: 20px; /* Adicione preenchimento para espaçamento interno */
 }
 
 footer {
