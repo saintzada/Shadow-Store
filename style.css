@@ -53,6 +53,9 @@ main {
     border-radius: 10px; /* Adicionar bordas arredondadas */
     width: 300px; /* Defina a largura dos produtos */
     overflow: hidden; /* Esconde os elementos que ultrapassam a largura */
+    display: flex; /* Alinhar itens verticalmente */
+    flex-direction: column; /* Alinhar itens verticalmente */
+    justify-content: space-between; /* Espaço entre imagem e detalhes */
 }
 
 .product:hover {
@@ -65,12 +68,16 @@ main {
     height: auto;
 }
 
+.product-details {
+    padding: 10px;
+}
+
 .price {
     font-weight: bold;
     color: #FF0000; /* Vermelho */
 }
 
-/* Adicione um efeito de transição suave para o botão Comprar */
+/* Defina o botão Comprar para ficar oculto por padrão */
 .buy-button {
     background-color: #27ae60; /* Verde */
     color: white;
@@ -78,13 +85,14 @@ main {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+    opacity: 0;
 }
 
-.buy-button:hover {
-    background-color: #219e54; /* Verde escuro ao passar o mouse */
+/* Mostre o botão Comprar ao passar o mouse sobre o produto */
+.product:hover .buy-button {
+    opacity: 1;
 }
 
-/* Adicione um efeito de animação ao banner */
 .banner {
     width: 100%;
     max-height: 300px;
