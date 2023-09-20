@@ -88,22 +88,22 @@ main {
     0% {
         opacity: 0;
         transform: translateX(100%); /* Iniciar fora da tela à direita */
-        background-image: url('banner1.jpg');
+        background-image: url('https://github.com/saintzada/Shadow-Store/blob/main/banner2.jpeg?raw=true');
     }
     25% {
         opacity: 1;
         transform: translateX(0); /* Deslizar para a esquerda */
-        background-image: url('banner1.jpg');
+        background-image: url('https://github.com/saintzada/Shadow-Store/blob/main/banner2.jpeg?raw=true');
     }
     75% {
         opacity: 1;
         transform: translateX(0); /* Manter na tela */
-        background-image: url('banner1.jpg');
+        background-image: url('https://github.com/saintzada/Shadow-Store/blob/main/banner2.jpeg?raw=true');
     }
     100% {
         opacity: 0;
         transform: translateX(-100%); /* Sair para a esquerda */
-        background-image: url('banner1.jpg');
+        background-image: url('https://github.com/saintzada/Shadow-Store/blob/main/banner2.jpeg?raw=true');
     }
 }
 
