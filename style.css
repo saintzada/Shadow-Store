@@ -57,8 +57,6 @@ main {
     overflow: hidden; /* Esconde os elementos que ultrapassam a largura */
     display: flex; /* Alinhar itens verticalmente */
     flex-direction: column; /* Alinhar itens verticalmente */
-    justify-content: space-between; /* Espaço entre imagem e detalhes */
-    position: relative; /* Adicione position: relative; */
 }
 
 .product:hover {
@@ -72,19 +70,9 @@ main {
 }
 
 .product-details {
-    position: absolute;
-    bottom: 0; /* Posicione na parte inferior do produto */
-    left: 0;
-    width: 100%; /* Use a largura total do produto */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
-    color: white;
     padding: 10px;
-    opacity: 0; /* Inicialmente invisível */
-    transition: opacity 0.3s;
-}
-
-.product:hover .product-details {
-    opacity: 1; /* Torna visível ao passar o mouse */
+    display: flex;
+    flex-direction: column; /* Alinhar os detalhes verticalmente */
 }
 
 .price {
