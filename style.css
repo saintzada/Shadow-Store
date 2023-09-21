@@ -105,13 +105,13 @@ main {
 }
 
 .banner img {
-    width: 50%;
+    max-width: 50%; /* Defina a largura das imagens do slide */
     height: auto;
     position: absolute;
     animation: rotateBanner 12s infinite alternate;
     opacity: 0;
     border-radius: 5px; /* Adicione uma borda redonda à imagem do slide */
-} 
+}
 
 @keyframes rotateBanner {
     0%, 100% {
