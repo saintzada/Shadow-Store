@@ -11,6 +11,18 @@
     /* Você também pode fornecer formatos de fonte diferentes, como woff, woff2, ttf, etc., dependendo das versões da fonte que você possui */
 }
 
+body {
+    font-family: 'WhirlyBirdie-WideBold', sans-serif;
+    /* Use a fonte personalizada como primeira escolha e, se não estiver disponível, use uma fonte sans-serif padrão como alternativa. */
+}
+
+h1 {
+    font-family: 'WhirlyBirdie-WideBold', sans-serif;
+    /* Use a fonte personalizada para cabeçalhos, se preferir. */
+}
+
+/* Outros estilos de texto */
+
 
 body {
     font-family: 'WhirlyBirdie-WideBold', sans-serif;
