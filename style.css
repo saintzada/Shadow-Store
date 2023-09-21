@@ -127,6 +127,33 @@ main {
         transform: translateX(0); /* Manter na tela */
     }
 }
+
+/* ... (outros estilos) ... */
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd; /* Adicione uma borda à área do slide */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adicione uma sombra à área do slide */
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    padding: 10px; /* Adicione um preenchimento interno para espaçamento interno */
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Adicione uma borda às imagens do slide */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adicione uma sombra às imagens do slide */
+}
+
+/* ... (outros estilos) ... */
+
+
 footer {
     background: url('https://github.com/saintzada/Shadow-Store/blob/main/reader.jpg?raw=true') no-repeat center center;
     background-size: auto 100%;
