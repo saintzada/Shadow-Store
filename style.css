@@ -60,6 +60,8 @@ main {
 /* ... (outros estilos) ... */
 
 
+/* ... (outros estilos) ... */
+
 .product {
     border: 1px solid #ddd;
     margin: 10px;
@@ -68,7 +70,7 @@ main {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 10px;
-    width: calc(25% - 20px); /* Calcule a largura dos produtos para se encaixar na linha com margens */
+    width: calc(33.33% - 20px); /* Calcule a largura dos produtos para se encaixar na linha com margens */
     max-height: 300px;
     overflow: hidden;
     display: flex;
@@ -78,9 +80,23 @@ main {
 }
 
 .product img {
-    max-width: 100%;
+    max-width: 80%; /* Defina a largura das imagens dos produtos */
     height: auto;
 }
+
+/* ... (outros estilos) ... */
+
+.banner img {
+    max-width: 70%; /* Defina a largura das imagens do slide */
+    height: auto;
+    position: absolute;
+    animation: rotateBanner 12s infinite alternate;
+    opacity: 0;
+    border-radius: 5px; /* Adicione uma borda redonda à imagem do slide */
+}
+
+/* ... (outros estilos) ... */
+
 
 .product:hover {
     transform: scale(1.05); /* Efeito de escala ao passar o mouse */
