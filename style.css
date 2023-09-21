@@ -131,6 +131,16 @@ main {
 /* ... (outros estilos) ... */
 
 .slider {
+    max-width: 800px; /* Defina a largura máxima desejada */
+    margin: 0 auto; /* Adicione margens automáticas para centralizar horizontalmente */
+    overflow: hidden;
+    position: relative;
+}
+
+/* ... (outros estilos) ... */
+
+
+.slider {
     width: 100%;
     overflow: hidden;
     position: relative;
