@@ -134,8 +134,6 @@ main {
     width: 100%;
     overflow: hidden;
     position: relative;
-    border: 1px solid #ddd; /* Adicione uma borda à área do slide */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adicione uma sombra à área do slide */
 }
 
 .slide {
@@ -147,11 +145,13 @@ main {
 .slide img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd; /* Adicione uma borda às imagens do slide */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adicione uma sombra às imagens do slide */
+    border-radius: 5px; /* Adicione borda arredondada às imagens do slide */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adicione sombra às imagens do slide */
+    border: 1px solid transparent; /* Remova a borda quadrada */
 }
 
 /* ... (outros estilos) ... */
+
 
 
 footer {
