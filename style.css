@@ -37,14 +37,28 @@ nav a {
     color: white;
 }
 
+/* ... (outros estilos) ... */
+
 main {
     display: flex;
+    justify-content: center; /* Alinhe o conteúdo ao centro horizontalmente */
+    align-items: flex-start; /* Alinhe o conteúdo ao topo verticalmente */
     flex-wrap: wrap; /* Adicione flex-wrap para que os produtos possam ser envolvidos para a próxima linha */
-    justify-content: space-around;
     padding: 20px;
     /* Remova a flex-grow para permitir a rolagem vertical */
     min-height: calc(100vh - 110px); /* Altura mínima com margem do rodapé */
 }
+
+.slider {
+    max-width: 800px; /* Defina a largura máxima desejada */
+    overflow: hidden;
+    position: relative;
+    text-align: center; /* Alinhe o conteúdo do slider no centro */
+    margin: 0 auto; /* Adicione margens automáticas para centralizar horizontalmente */
+}
+
+/* ... (outros estilos) ... */
+
 
 .product {
     border: 1px solid #ddd;
