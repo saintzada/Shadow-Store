@@ -71,7 +71,7 @@ main {
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 10px;
     width: calc(33.33% - 20px); /* Calcule a largura dos produtos para se encaixar na linha com margens */
-    max-height: 300px;
+    max-height: 500px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
