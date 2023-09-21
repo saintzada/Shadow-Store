@@ -49,19 +49,6 @@ main {
     min-height: calc(100vh - 110px); /* Altura mínima com margem do rodapé */
 }
 
-.slider {
-    max-width: 800px; /* Defina a largura máxima desejada */
-    overflow: hidden;
-    position: relative;
-    text-align: center; /* Alinhe o conteúdo do slider no centro */
-    margin: 0 auto; /* Adicione margens automáticas para centralizar horizontalmente */
-}
-
-/* ... (outros estilos) ... */
-
-
-/* ... (outros estilos) ... */
-
 .product {
     border: 1px solid #ddd;
     margin: 10px;
@@ -159,7 +146,14 @@ main {
     }
 }
 
-/* ... (outros estilos) ... */
+.slider {
+    max-width: 800px; /* Defina a largura máxima desejada */
+    overflow: hidden;
+    position: relative;
+    text-align: center; /* Alinhe o conteúdo do slider no centro */
+    margin: 0 auto; /* Adicione margens automáticas para centralizar horizontalmente */
+}
+
 
 .slider {
     max-width: 800px; /* Defina a largura máxima desejada */
