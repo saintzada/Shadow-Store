@@ -48,3 +48,28 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!-- ... Seu HTML existente ... -->
+
+<script>
+    // Seletor para todas as imagens do slide
+    const slideImages = document.querySelectorAll('.banner img');
+    
+    // Índice da imagem atual
+    let currentIndex = 0;
+    
+    // Função para avançar para a próxima imagem
+    function nextImage() {
+        const previousIndex = currentIndex;
+        currentIndex = (currentIndex + 1) % slideImages.length; // Próxima imagem ou volta ao início
+        slideImages[previousIndex].style.opacity = 0;
+        slideImages[previousIndex].style.transform = 'translateX(-100%)';
+        slideImages[currentIndex].style.opacity = 1;
+        slideImages[currentIndex].style.transform = 'translateX(0)';
+    }
+    
+    // Iniciar a animação do slide
+    setInterval(nextImage, 5000); // Troque a imagem a cada 5 segundos (ajuste conforme necessário)
+</script>
+</body>
+</html>
+
