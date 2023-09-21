@@ -41,9 +41,6 @@ nav a {
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
     padding: -20px; /* Remova o padding negativo */
     min-height: calc(78vh - 194px); /* Ajuste a altura mínima */
 }
