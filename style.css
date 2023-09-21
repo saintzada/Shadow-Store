@@ -124,13 +124,15 @@ main {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* ... (outros estilos) ... */
+
 .banner img {
     max-width: 50%;
     height: auto;
     position: absolute;
-    animation: rotateBanner 12s infinite alternate;
     opacity: 0;
     border-radius: 5px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Adicione a transição */
 }
 
 @keyframes rotateBanner {
@@ -147,6 +149,9 @@ main {
         transform: translateX(0);
     }
 }
+
+/* ... (outros estilos) ... */
+
 
 .slider {
     max-width: 800px;
