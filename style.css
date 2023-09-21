@@ -131,7 +131,7 @@ main {
 /* ... (outros estilos) ... */
 
 .slider {
-    max-width: 800px; /* Defina a largura máxima desejada */
+    max-width: 400px; /* Defina a largura máxima desejada */
     margin: 0 auto; /* Adicione margens automáticas para centralizar horizontalmente */
     overflow: hidden;
     position: relative;
@@ -155,8 +155,8 @@ main {
 .slide img {
     max-width: 50%;
     height: auto;
-    border-radius: 5px; /* Adicione borda arredondada às imagens do slide */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adicione sombra às imagens do slide */
+    border-radius: 8px; /* Adicione borda arredondada às imagens do slide */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6); /* Adicione sombra às imagens do slide */
     border: 1px solid transparent; /* Remova a borda quadrada */
 }
 
