@@ -98,7 +98,7 @@ main {
 .buy-button {
     background-color: #ff0000;
     color: white;
-    padding: 8px 124px;
+    padding: 8px 160px;
     border: 10px;
     cursor: pointer;
     transition: background-color 0.3s, border-radius 0.3s;
