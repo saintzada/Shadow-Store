@@ -68,22 +68,26 @@ main {
     height: auto;
 }
 
-/* ... (outros estilos) ... */
+.product:hover {
+    transform: scale(0.95); /* Efeito de escala ao passar o mouse */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
 
-/* Defina o botão Comprar para ficar oculto por padrão */
+/* Adicione estilos de sombra ao botão Comprar */
 .buy-button {
     background-color: #27ae60;
     color: white;
     padding: 8px 16px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, border-radius 0.3s; /* Adicione a transição da borda */
     opacity: 0;
     margin-top: auto; /* Empurre o botão para a parte inferior */
     position: absolute; /* Posicione o botão Comprar */
     bottom: 10px; /* Ajuste a posição vertical do botão */
     left: 50%; /* Centralize o botão horizontalmente */
     transform: translateX(-50%); /* Centralize horizontalmente com base na largura do produto */
+    border-radius: 5px; /* Adicione borda redonda ao botão Comprar */
 }
 
 /* Mostre o botão Comprar ao passar o mouse sobre o produto */
