@@ -39,13 +39,12 @@ nav a {
 
 main {
     display: flex;
+    flex-wrap: wrap; /* Adicione flex-wrap para que os produtos possam ser envolvidos para a próxima linha */
     justify-content: space-around;
     padding: 20px;
     /* Remova a flex-grow para permitir a rolagem vertical */
     min-height: calc(100vh - 110px); /* Altura mínima com margem do rodapé */
 }
-
-/* ... (outros estilos) ... */
 
 .product {
     border: 1px solid #ddd;
@@ -55,14 +54,43 @@ main {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 10px;
-    width: 300px;
+    width: calc(25% - 20px); /* Calcule a largura dos produtos para se encaixar na linha com margens */
     max-height: 300px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Alinhar itens verticalmente */
+    position: relative; /* Adicione posição relativa para alinhar o botão Comprar */
 }
- 
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ... (outros estilos) ... */
+
+/* Defina o botão Comprar para ficar oculto por padrão */
+.buy-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    opacity: 0;
+    margin-top: auto; /* Empurre o botão para a parte inferior */
+    position: absolute; /* Posicione o botão Comprar */
+    bottom: 10px; /* Ajuste a posição vertical do botão */
+    left: 50%; /* Centralize o botão horizontalmente */
+    transform: translateX(-50%); /* Centralize horizontalmente com base na largura do produto */
+}
+
+/* Mostre o botão Comprar ao passar o mouse sobre o produto */
+.product:hover .buy-button {
+    opacity: 1;
+}
+
 .banner {
     width: 100%;
     max-height: 300px;
@@ -90,88 +118,6 @@ main {
     75% {
         opacity: 1;
         transform: translateX(0); /* Manter na tela */
-    }
-}
-
-.product:hover {
-    transform: scale(0.95); /* Efeito de escala ao passar o mouse */
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.product img {
-    max-width: 100%;
-    height: auto;
-}
-
-.product-details {
-    position: absolute;
-    bottom: 0; /* Posicione na parte inferior do produto */
-    left: 0;
-    width: 100%; /* Use a largura total do produto */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
-    color: white;
-    padding: 10px;
-    opacity: 0; /* Inicialmente invisível */
-    transition: opacity 0.3s;
-}
-
-.product:hover .product-details {
-    opacity: 1; /* Torna visível ao passar o mouse */
-}
-
-.price {
-    font-weight: bold;
-    color: #FF0000; /* Vermelho */
-}
-
-/* Defina o botão Comprar para ficar oculto por padrão */
-.buy-button {
-    background-color: #27ae60;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    opacity: 0;
-    margin-top: auto; /* Empurre o botão para a parte inferior */
-}
-
-/* Mostre o botão Comprar ao passar o mouse sobre o produto */
-.product:hover .buy-button {
-    opacity: 1;
-}
-
-.banner {
-    width: 100%;
-    max-height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    animation: rotateBanner 12s infinite alternate;
-    opacity: 0;
-}
-
-@keyframes rotateBanner {
-    0% {
-        opacity: 0;
-        transform: translateX(100%); /* Iniciar fora da tela à direita */
-    }
-    25% {
-        opacity: 1;
-        transform: translateX(0); /* Deslizar para a esquerda */
-    }
-    75% {
-        opacity: 1;
-        transform: translateX(0); /* Manter na tela */
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-100%); /* Sair para a esquerda */
     }
 }
 
