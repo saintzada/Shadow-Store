@@ -11,6 +11,12 @@
     /* Você também pode fornecer formatos de fonte diferentes, como woff, woff2, ttf, etc., dependendo das versões da fonte que você possui */
 }
 
+.nav a {
+    font-family: 'WhirlyBirdie-WideBold', sans-serif;
+    /* Use a fonte personalizada como primeira opção e fallback para uma fonte genérica (sans-serif) */
+    /* Isso se aplica a todos os links dentro de elementos <nav> */
+}
+
 body {
     font-family: 'WhirlyBirdie-WideBold', sans-serif;
     /* Use a fonte personalizada como primeira escolha e, se não estiver disponível, use uma fonte sans-serif padrão como alternativa. */
