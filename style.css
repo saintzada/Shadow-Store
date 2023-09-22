@@ -45,7 +45,7 @@ header {
     background-size: auto 100%;
     text-align: center;
     padding: -58px;
-    box-shadow: 1px 4px 6px 1px rgb(0 0 0);
+    box-shadow: 1px 4px 20px 1px rgb(0 0 0);
 }
 
 nav ul {
@@ -81,15 +81,15 @@ main {
 /* ... (outros estilos) ... */
 
 .product {
-    border: 1px solid #ddd;
+    border: 1px solid #000;
     margin: 10px;
     text-align: center;
-    background-color: white;
+    background-color: black;
     box-shadow: 1px 6px 5px rgb(0 0 0);
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 10px;
     width: calc(33.33% - 20px);
-    max-height: 300px;
+    max-height: 222px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -98,8 +98,8 @@ main {
 }
 
 .product img {
-    max-width: 80%;
-    height: auto;
+    max-width: 1000%;
+    height: max-content;
 }
 
 /* ... (outros estilos) ... */
