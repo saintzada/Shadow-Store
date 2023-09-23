@@ -6,6 +6,12 @@
 }
 
 @font-face {
+    font-family: 'MinhaFontePersonalizada'; /* Escolha um nome para sua fonte personalizada */
+    src: url('WhirlyBirdie-WideBold.otf') format('opentype'); /* Substitua pelo caminho correto para o seu arquivo de fonte */
+}
+
+
+@font-face {
     font-family: 'WhirlyBirdie-WideBold';
     src: url('https://github.com/saintzada/Shadow-Store/blob/main/WhirlyBirdie-WideBold.otf') format('opentype');
     /* Você também pode fornecer formatos de fonte diferentes, como woff, woff2, ttf, etc., dependendo das versões da fonte que você possui */
