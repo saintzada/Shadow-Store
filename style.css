@@ -11,6 +11,19 @@
     /* Você também pode fornecer formatos de fonte diferentes, como woff, woff2, ttf, etc., dependendo das versões da fonte que você possui */
 }
 
+/* Adicione estas regras para estilizar os links de iOS, Android e Emulador */
+.nav-link {
+    font-family: 'Nome da Sua Fonte', sans-serif; /* Substitua 'Nome da Sua Fonte' pelo nome correto da sua fonte */
+    /* Adicione outros estilos, como tamanho de fonte, cores, margens, etc. */
+}
+
+/* Defina as dimensões das imagens nos links de navegação */
+.nav-link img {
+    width: 25px; /* Largura desejada */
+    height: 25px; /* Altura desejada */
+}
+
+
 .nav a {
     font-family: 'WhirlyBirdie-WideBold', sans-serif;
     /* Use a fonte personalizada como primeira opção e fallback para uma fonte genérica (sans-serif) */
