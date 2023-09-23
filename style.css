@@ -29,6 +29,7 @@
     color: #ffffff; /* Cor do texto */
     text-align: center; /* Alinhe o texto ao centro */
     margin-top: 20px; /* Margem superior para distanciar do slide */
+    margin-left: 20px; /* Ajuste a margem esquerda conforme necessário */
 }
 
 /* Defina as dimensões das imagens nos links de navegação */
