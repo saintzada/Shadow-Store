@@ -25,11 +25,11 @@
 
 .product-text {
     font-family: 'MinhaFontePersonalizada', sans-serif; /* Use o nome da fonte definido no passo 2 */
-    font-size: 24px; /* Tamanho da fonte desejado */
+    font-size: 15px; /* Tamanho da fonte desejado */
     color: #ffffff; /* Cor do texto */
     text-align: center; /* Alinhe o texto ao centro */
-    margin-top: 20px; /* Margem superior para distanciar do slide */
-    margin-left: 20px; /* Ajuste a margem esquerda conforme necessário */
+    margin-top: 15px; /* Margem superior para distanciar do slide */
+    margin-left: -1101px; /* Ajuste a margem esquerda conforme necessário */
 }
 
 /* Defina as dimensões das imagens nos links de navegação */
@@ -158,10 +158,12 @@ main {
     opacity: 0;
     margin-top: auto;
     position: absolute;
-    bottom: 10px;
+    bottom: 1px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
+    font-family: 'MinhaFontePersonalizada', sans-serif; /* Use o nome da fonte definido no passo 2 */
+    font-size: 13px; /* Tamanho da fonte desejado */
 }
 
 .product:hover .buy-button {
