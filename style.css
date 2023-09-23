@@ -23,6 +23,14 @@
     /* Adicione outros estilos, como tamanho de fonte, cores, margens, etc. */
 }
 
+.product-text {
+    font-family: 'MinhaFontePersonalizada', sans-serif; /* Use o nome da fonte definido no passo 2 */
+    font-size: 24px; /* Tamanho da fonte desejado */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Alinhe o texto ao centro */
+    margin-top: 20px; /* Margem superior para distanciar do slide */
+}
+
 /* Defina as dimensões das imagens nos links de navegação */
 .nav-link img {
     width: 25px; /* Largura desejada */
