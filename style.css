@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+
+body {
+    user-select: none;
+}
+
+
+.allow-select {
+    user-select: text;
+}
+
+
 @font-face {
     font-family: 'MinhaFontePersonalizada'; /* Escolha um nome para sua fonte personalizada */
     src: url('WhirlyBirdie-WideBold.otf') format('opentype'); /* Substitua pelo caminho correto para o seu arquivo de fonte */
