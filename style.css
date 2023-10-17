@@ -1,1 +1,28 @@
+/* Estilize o cartão */
+.card {
+    border: 1px dashed green; /* Borda verde */
+    border-left: none; /* Remova a borda esquerda (para replicar a foto) */
+    padding: 20px;
+    background-color: #f9f9f9; /* Cor de fundo semelhante à da foto */
+}
+
+/* Estilize o texto dentro do cartão */
+.card h1 {
+    font-size: 24px;
+    color: black;
+}
+
+.card p {
+    font-size: 18px;
+    color: black;
+}
+
+/* Estilize o botão dentro do cartão */
+.card button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
